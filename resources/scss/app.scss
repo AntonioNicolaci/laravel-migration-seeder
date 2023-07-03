@@ -1,1 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+    background-color: #555;
+}
+#ms_board {
+    list-style: none;
+    padding: 3px;
+    border: 1px solid #fa0;
+
+    & li {
+        border: 1px solid #fa0;
+        text-align: center;
+        margin-bottom: 2px;
+        color: #eee;
+        & span {
+            border-right: 1px solid #fa0;
+        }
+    }
+}
